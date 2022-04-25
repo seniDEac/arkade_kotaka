@@ -1,0 +1,133 @@
+
+
+<html>
+    <audio id="player_html5"  ></audio>
+    <body cz-shortcut-listen="true">
+        <div class="navbar">
+            <a id="a1" class="onGame"   style="display:block;"><img  src="assets/images/duble-bubble.png"></a>
+            <!-- <a id="a3" class="onFinish"  style="display:none; "><img src="assets/images/empty.png"></a> -->
+            <a id="a4" class="onFinish"  style="display:none; "><img onclick="newGame(this)" src="assets/images/new-game.png"></a>
+            <div class="topnav-right">
+                <a id="a6" class="onGame"    style="display:block;"><img src="assets/images/up-bubble.png"></a>
+            </div>
+        </div>
+    </body>
+    <head>
+        <meta charset="UTF-8" />
+        <link  href="assets/css/menu.css" rel="stylesheet" >
+        <script src="assets/js/menu.js" >                            </script>
+        <script src="assets/js/jquery.min.js" type="text/javascript"></script>
+        <script src="assets/js/phaser.js">                           </script>
+        <script src="assets/js/hammer.js">                           </script>
+
+        <link  href="assets/css/bootstrap.min.css" rel="stylesheet" >
+        <script src="assets/js/bootstrap.min.js">                    </script>
+
+        <script src="assets/js/index.js" >                           </script>
+        <link  href="assets/css/index.css" rel="stylesheet" >
+    </head>
+
+
+<!--
+-  the slide menu
+-->
+<div id="menuBackground" class="menuBackground"  onclick="strata();">
+</div>
+<div id="sideMenu" class="sideMenu">
+      <div  id="sideMenu01" class="iconSideMenu" onclick="strata();"><img src="assets/images/system/buttonRed2.png"></i>
+      </div>
+      <div  id="sideMenu02" class="logoBg">
+          <table>
+              <tr>
+                  <td rowspan="2"> <img src="assets/images/logos/icon.png"></td>
+                      <td>
+                          <font id="" style="color:white;"><b>&nbsp;&nbsp;Kotaka MasterFish</b></font>
+                      </td>
+              </tr>
+              <tr>
+                  <td>
+                      <font id="" style="color:white;">
+                      &nbsp;&nbsp;&nbsp;Aqui s&oacute; a melhor<br>
+                      &nbsp;&nbsp;&nbsp;  divers&atilde;o.<br>
+                      </font>
+                  </td>
+              </tr>
+          </table>
+      </div >
+
+
+      <nav  id="sideMenu03">
+          <div  id="sideMenu03a" class="navContainer">
+                      <div  id="sideMenu03b" class="navContainer1">
+                              <!-- <br> -->
+                              <!-- <div  id="sideMenu03c" class="navContainerLinks" onclick="goConfig();"><i class="fa fa-gear" style="font-size:36px;">&nbsp;&nbsp;&nbsp; </i> Configura&ccedil;&otilde;es</div> -->
+                              <!-- <div id="sideMenu03e"  class="navContainerLinks"  onclick="$('#modalHelp').modal({});">
+                                  <i class="fa fa-file-text-o"  style="font-size:36px;">&nbsp;&nbsp;&nbsp; </i> Menssagens
+                              </div>  -->
+                              <!-- <div class="navContainerLinks"  onclick="goHelp();">
+                                  <i class="fa fa-credit-card"        style="font-size:36px;">&nbsp;&nbsp;&nbsp; </i> Como Ajudar.
+                              </div> -->
+                              <div class="navContainerLinks"  onclick="goPrivicyPolicy();">
+                                <img src="assets/images/system/iconCard.png">&nbsp;&nbsp;&nbsp; Pol&iacute;tica de privacidade
+                              </div>
+                              <div class="navContainerLinks"  onclick="window.open(`http://www.vovosdepijama.com`, `_system`, `location=yes`); return false;">
+                                <img src="assets/images/system/iconCloud.png">&nbsp;&nbsp;&nbsp; Vizite nosso site
+                              </div>
+                              <!-- <div class="navContainerLinks"  onclick="window.open(`http://www.namae.space/products/DEaque/3.html`,     `_system`, `location=yes`); return false;">
+                                  <i class="fa fa-vcard-o" style="font-size:36px;"><text>&nbsp;&nbsp;&nbsp; </i> Pol&iacute;tica de privacidade
+                              </div> -->
+                              <br>
+                              <br>
+
+                              <font color="blue">Esse pequeno jogo &eacute; uma homenagem ao kotaka! Obrigado a ele por trazer muitas risadas para a internet!
+                              <br>
+                              <br>
+
+                              <div class="navContainerLinks"  onclick="window.open(`https://www.youtube.com/c/flaviokotaka/videos`, `_system`, `location=yes`); return false;">
+                                <img src="assets/images/logos/youtube.png">&nbsp;&nbsp;&nbsp; Kotaka no youTube
+                              </div>
+
+                              <br>
+                              <br>
+
+                              <div class="navContainerLinks"  onclick="window.open(`https://www.youtube.com/c/Vov%C3%B3sdePijama/videos`, `_system`, `location=yes`); return false;">
+                                <img src="assets/images/logos/youtube.png">&nbsp;&nbsp;&nbsp; Vovos De Pijama no youTube
+                              </div>
+
+                              <br>
+                              <br>
+                              <br>
+                              <br>
+                      </div>
+
+          </div>
+      </nav>
+</div>
+</div>
+
+
+					<!--
+						 -  modal for ...
+					 -->
+					 <div class="modal fade" id="modalHelp" role="dialog">
+						<div class="modal-dialog modal-lg">
+										<div class="modal-content">
+											<div  id="oneModalBodyHelpHeader" class="modal-header">
+												<button type="button" class="btn btn-success btn-lg" data-dismiss="modal">Fechar</button>
+											</div>
+											<div id="oneModalBodyHelp" class="modal-body">
+
+
+											</div>
+											<div  id="oneModalBodyHelpFooter" class="modal-footer">
+												<button type="button" class="btn btn-success btn-lg" data-dismiss="modal">Fechar</button>
+											</div>
+										</div>
+						</div>
+					</div>
+
+
+
+
+
+</html>

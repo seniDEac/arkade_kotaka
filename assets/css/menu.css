@@ -1,0 +1,154 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+.iconSideMenu {
+	font-size: 30px;
+	position: absolute;
+	left: 300px;
+	left:300;
+	cursor: pointer;
+	color:white;
+}
+
+.menuBackground{
+	position: fixed;
+	top: 40px;
+	left:0px;
+	width:100%;
+	height:100%;
+	color: black;
+	border:0px solid red;
+	background-color: black;
+	opacity: .5;
+	display:none;
+}
+
+
+.sideMenu {
+	border:1px solid gray;
+	border-radius: 0px 10px 0px 0px;
+	box-shadow:1px 10px 15px gray;
+	top:0px;
+	width: 295px;
+	height: 2000;
+	position: fixed;
+	background-color: white;
+	left: -300px;
+	-webkit-transition: all .25s linear;
+	   -moz-transition: all .25s linear;
+	    -ms-transition: all .25s linear;
+	     -o-transition: all .25s linear;
+	        transition: all .25s linear;
+}
+
+.logoBg{
+	width: 100%;
+	height: 100px;
+	border-radius: 0px 10px 10px 0px;
+	box-shadow: 2px 10px 15px gray;
+  background-image: linear-gradient(to right, #026e5f , #34aca0);
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+ull {
+		position: fixed;
+    list-style-type: none;
+		width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3d51b4;
+}
+
+lli {
+    float: left;
+}
+
+lli a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+lli a:hover {
+    background-color: #2f3f9e;
+		color: white;
+}
+
+.navContainer {
+  /* overflow: scroll; */
+	color:gray;
+}
+.navContainer1 {
+   border:1px solid gray;
+   padding: 15px;
+}
+.navContainer2 {
+   padding: 15px;
+}
+
+
+table, th, td {
+  /* border: 5px solid black; */
+  /* border-collapse: collapse; */
+  text-align: center;
+  /* border-spacing: 2px; */
+}
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
